@@ -9,7 +9,7 @@ The repository contains two main automation projects:
 
 **1.1. Features**
 
-- Automated Sales Reporting – Generates daily-to-monthly reports with minimal manual work.
+- Automated Sales Reporting – Generates daily report with minimal manual work.
 
 - Data Mapping & Transformation – Standardizes raw sales data into clean, structured output.
 
@@ -32,7 +32,7 @@ The repository contains two main automation projects:
 
 - Prompts for date, category, and file path.
 
-- Consolidates orders from multiple sheets (e.g., Snack, Confectionery, Instand Noodle).
+- Consolidates orders from multiple sheets (e.g., Snack, Confectionery, Instant Noodle).
 
 - Builds a new worksheet with clean formatting and sequential order numbers.
 
@@ -65,7 +65,7 @@ End Sub
 
 **3. USE CASE**
 
-Automating monthly or daily sales reporting.
+Automating daily sales reporting.
 
 
 **4. IMPACT**
