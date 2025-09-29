@@ -24,6 +24,7 @@ The repository contains two main automation projects:
 - MS Excel
 
 - VBA (Visual Basic for Applications)
+  
 
 **2. PROJECT DETAILS**
 
@@ -61,9 +62,11 @@ Sub MapDataToNewSheet_Modular()
     MsgBox "Data mapping completed successfully!"
 End Sub
 ```
+
 **3. USE CASE**
 
 Automating monthly or daily sales reporting.
+
 
 **4. IMPACT**
 
