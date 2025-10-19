@@ -1,23 +1,14 @@
-# daily-sales-orders-vba-automation
 **1. PROJECT OVERVIEW**
 
-This repository showcases Excel VBA automation projects that streamline daily sales operations and reduce repetitive tasks. By leveraging modular VBA functions, these tools improve reporting accuracy, save time, and support better decision-making.
-
-The repository contains two main automation projects:
-- Import Orders by Date and Category – Consolidates order data from multiple sheets into a formatted report.
-- Map Data to New Sheet – Maps raw sales data into a standardized structure for reporting and analysis.
+This repository contains a **modular Excel VBA automation tool** designed to streamline daily sales reporting. The macro consolidates sales orders by date and category from multiple source sheets into a single, cleanly formatted worksheet—eliminating repetitive copy-paste and reducing manual errors.
 
 **1.1. Features**
 
-- Automated Sales Reporting – Generates daily report with minimal manual work.
-
-- Data Mapping & Transformation – Standardizes raw sales data into clean, structured output.
-
-- Error Reduction – Cuts manual error checks by ~40%.
-
-- Workflow Efficiency – Optimized VBA workflows save up to 30% preparation time.
-
-- Reusable Modular Functions – Each task (inputs, mapping, formatting) is broken into functions for easier reuse.
+- **Automated Reporting**: Generates daily consolidated reports in seconds with just a few prompts.
+- **User-Friendly Inputs**: Prompts for date, category, and file path—no manual setup needed.
+- **Data Consolidation**: Combines orders from multiple sheets (e.g., Snacks, Confectionery, Noodle) based on date and category.
+- **Professional Formatting**: Clean numbering, bold headers, Arial 11, auto-fit columns, all ready for analysis.
+- **Reusable Modular Code**: Each task is a dedicated function/sub for easy maintenance and reusability.
 
 **1.2. Tech Stack**
 
@@ -28,7 +19,7 @@ The repository contains two main automation projects:
 
 **2. PROJECT DETAILS**
 
-**2.1. Import Orders by Date and Category**
+**Import Orders by Date and Category**
 
 - Prompts for date, category, and file path.
 
@@ -45,30 +36,15 @@ Sub ImportOrders_ByDateAndCategory_Modular()
     MsgBox "Orders imported successfully!"
 End Sub
 ```
-**2.2. Map Data to New Sheet**
+_DEMO_
+<img width="2738" height="722" alt="image" src="https://github.com/user-attachments/assets/2a21d27c-0172-43f6-96f7-ed1dc4d7721a" />
 
-- Maps raw sales data headers into a standardized reporting format.
-
-- Handles column mismatches with dictionary mapping.
-
-- Applies correct number formats (%, MT, integers).
-
-```
-Sub MapDataToNewSheet_Modular()
-    sheetName = InputBox("Enter the source sheet name:")
-    Set wsSource = GetWorksheet(ThisWorkbook, sheetName)
-    Set colDict = MapHeaders(wsSource, headers, sourceCols)
-    CopyAndFormatData wsSource, wsNew, headers, colDict
-    MsgBox "Data mapping completed successfully!"
-End Sub
-```
-
-**3. USE CASE**
+**4. USE CASE**
 
 Automating daily sales reporting.
 
 
-**4. IMPACT**
+**5. IMPACT**
 
 - 40% fewer manual error checks through automation.
 
